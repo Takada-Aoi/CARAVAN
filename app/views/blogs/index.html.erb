@@ -40,7 +40,7 @@
     <div class="blog-box">
      <% @blog.each do |blog| %>
       <div class="blog-item">
-        <div class="blog-image"><%=image_tag('img/forest.jpg',class='blog-image')%></div>
+        <div class="blog-image"><%= image_tag('img/forest.jpg',class: 'blog-image')%></div>
         <sestion class="blog-text">
           <h3 class="blog-text-heading"><%=link_to blog.title,blog_path(blog)%></h3>
           <p class="blog-date"><%=blog.created_at%></p>
@@ -49,7 +49,7 @@
      </div>
      <%end%>
     </div>
-     
+
     <div class="pagination">
       <p><<</p>
       <p><</p>
